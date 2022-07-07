@@ -46,7 +46,6 @@ class ViewController: UIViewController, ViewControllerLogic {
             button.heightAnchor.constraint(equalToConstant: 60),
             button.topAnchor.constraint(equalTo: self.lbl2.bottomAnchor, constant: 20),
             button.centerXAnchor.constraint(equalTo: self.view.centerXAnchor),
-
         ])
     }
     
