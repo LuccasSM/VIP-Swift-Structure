@@ -18,6 +18,7 @@ class AnotherViewController: UIViewController, AnotherViewControllerLogic {
     override func viewDidLoad() {
         super.viewDidLoad()
         self.view.backgroundColor = .systemGreen
+        router = AnotherControllerRouter(another: self)
         setupConstraints()
     }
     
@@ -26,8 +27,8 @@ class AnotherViewController: UIViewController, AnotherViewControllerLogic {
         self.view.addSubview(button)
         self.view.addSubview(buttonTwo)
         
-        interactor?.fetchHelloWorld()
         displayAnotherInfo()
+        interactor?.fetchHelloWorld()
     }
     
     func setupConstraints() {
