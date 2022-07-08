@@ -1,36 +1,31 @@
 //
-//  AnotherViewController.swift
+//  MyView.swift
 //  VIP-Swift-Structure
 //
 //  Created by Luccas Santana Marinho on 07/07/22.
 //
 
-import Foundation
 import UIKit
 
-protocol AnotherViewControllerLogic: AnyObject {
+protocol MyViewControllerLogic: AnyObject {
     func displayAnotherInfo()
 }
 
-protocol AnotherViewDelegate {
-    func configureData(_ data: String)
-}
-
-class AnotherViewController: UIViewController, AnotherViewControllerLogic {
-    
-    var interactor: AnotherViewInteractorLogic?
+class MyView: UIViewController, MyViewControllerLogic {
+    var interactor: InteractorLogic?
+    var router: ViewControllerRouter!
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.view.backgroundColor = .systemGreen
+        self.view.backgroundColor = .systemMint
         setupConstraints()
-        
-        displayAnotherInfo()
-        interactor?.fetchHelloWorld()
     }
     
     func insertViews() {
         self.view.addSubview(lbl)
+        
+        displayAnotherInfo()
+        interactor?.fetchHelloWorld()
     }
     
     func setupConstraints() {
@@ -50,11 +45,7 @@ class AnotherViewController: UIViewController, AnotherViewControllerLogic {
     }()
     
     func displayAnotherInfo() {
-        lbl.text = "Segunda tela"
+        lbl.text = "Minha MyView (Terceira view)"
         lbl.font.withSize(30)
-    }
-    
-    func configureData(_ data: String) {
-        lbl.text = data
     }
 }

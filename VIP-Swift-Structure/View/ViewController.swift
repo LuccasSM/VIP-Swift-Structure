@@ -14,22 +14,22 @@ protocol ViewControllerLogic: AnyObject {
 class ViewController: UIViewController, ViewControllerLogic {
     var interactor: InteractorLogic?
     var router: ViewControllerRouter!
-    var identifier = ViewController.description()
     
     override func viewDidLoad() {
         super.viewDidLoad()
         self.view.backgroundColor = .link
         router = ViewControllerRouter(viewController: self)
         setupConstraints()
-        
-        displayHelloWorld()
-        interactor?.fetchHelloWorld()
     }
     
     func insertViews() {
         self.view.addSubview(lbl)
         self.view.addSubview(lbl2)
         self.view.addSubview(button)
+        self.view.addSubview(buttonTwo)
+        
+        displayHelloWorld()
+        interactor?.fetchHelloWorld()
     }
     
     func setupConstraints() {
@@ -37,7 +37,7 @@ class ViewController: UIViewController, ViewControllerLogic {
         
         NSLayoutConstraint.activate([
             lbl.centerXAnchor.constraint(equalTo: self.view.centerXAnchor),
-            lbl.centerYAnchor.constraint(equalTo: self.view.centerYAnchor, constant: -50),
+            lbl.centerYAnchor.constraint(equalTo: self.view.centerYAnchor, constant: -100),
             
             lbl2.topAnchor.constraint(equalTo: self.lbl.bottomAnchor, constant: 20),
             lbl2.centerXAnchor.constraint(equalTo: self.view.centerXAnchor),
@@ -46,6 +46,11 @@ class ViewController: UIViewController, ViewControllerLogic {
             button.heightAnchor.constraint(equalToConstant: 60),
             button.topAnchor.constraint(equalTo: self.lbl2.bottomAnchor, constant: 20),
             button.centerXAnchor.constraint(equalTo: self.view.centerXAnchor),
+            
+            buttonTwo.widthAnchor.constraint(equalToConstant: UIScreen.main.bounds.width - 100),
+            buttonTwo.heightAnchor.constraint(equalToConstant: 60),
+            buttonTwo.topAnchor.constraint(equalTo: self.button.bottomAnchor, constant: 20),
+            buttonTwo.centerXAnchor.constraint(equalTo: self.view.centerXAnchor),
         ])
     }
     
@@ -63,10 +68,19 @@ class ViewController: UIViewController, ViewControllerLogic {
     
     private lazy var button: UIButton = {
         let button = UIButton()
-          button.translatesAutoresizingMaskIntoConstraints = false
-          button.backgroundColor = .orange
-          button.setTitle("Próxima tela", for: .normal)
-          button.addTarget(self, action: #selector(buttonAction), for: .touchUpInside)
+        button.translatesAutoresizingMaskIntoConstraints = false
+        button.backgroundColor = .orange
+        button.setTitle("Segunda tela", for: .normal)
+        button.addTarget(self, action: #selector(buttonAction), for: .touchUpInside)
+        return button
+    }()
+    
+    private lazy var buttonTwo: UIButton = {
+        let button = UIButton()
+        button.translatesAutoresizingMaskIntoConstraints = false
+        button.backgroundColor = .systemGray
+        button.setTitle("Terceira tela", for: .normal)
+        button.addTarget(self, action: #selector(navigateMyView), for: .touchUpInside)
         return button
     }()
     
@@ -76,7 +90,10 @@ class ViewController: UIViewController, ViewControllerLogic {
     }
     
     @objc func buttonAction(sender: UIButton!) {
-        let another = AnotherViewController()
-        router?.navigateToPushedViewController(source: self, destination: another)
+        router?.navigateToPushedViewController(source: self)
+    }
+    
+    @objc func navigateMyView(sender: UIButton!) {
+        router?.navigateToPushedThreeView(source: self)
     }
 }

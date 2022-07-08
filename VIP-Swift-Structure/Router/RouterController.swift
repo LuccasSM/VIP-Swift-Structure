@@ -10,9 +10,8 @@ import UIKit
 
 protocol RoutingDestinationProtocol {}
 
-enum ChatRoutingDestination: RoutingDestinationProtocol {
-   case viewChat(userId: String)
-   case startNewChat
+enum VcRoutingDestination: RoutingDestinationProtocol {
+   case viewController
 }
 
 protocol RouterProtocol {
@@ -22,16 +21,13 @@ protocol RouterProtocol {
 
 final class ViewControllerRouter: RouterProtocol {
     weak var viewController: ViewController?
-    weak var anotherView: AnotherViewController?
     
-    typealias RoutingDestination = ChatRoutingDestination
+    typealias RoutingDestination = VcRoutingDestination
     
     func route(to destination: RoutingDestination) {
         switch destination {
-        case .startNewChat:
-            print("uma tela")
-        case .viewChat(userId: _):
-            print("outra tela")
+        case .viewController:
+            print("tela viewController")
         }
     }
     
@@ -41,8 +37,14 @@ final class ViewControllerRouter: RouterProtocol {
 
     // MARK: ViewControllerRouterInput
 
-    func navigateToPushedViewController(source: UIViewController,  destination: UIViewController) {
-        self.viewController?.dismiss(animated: true)
-        self.viewController?.present(destination, animated: true)
+    func navigateToPushedViewController(source: UIViewController) {
+        let vc = UINavigationController(rootViewController: AnotherViewController())
+        vc.modalTransitionStyle = .crossDissolve
+        vc.modalPresentationStyle = .fullScreen
+        self.viewController?.present(vc, animated: true)
+    }
+    
+    func navigateToPushedThreeView(source: UIViewController) {
+        self.viewController?.present(MyView(), animated: true)
     }
 }
