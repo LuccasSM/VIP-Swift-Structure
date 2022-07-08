@@ -12,13 +12,13 @@ protocol AnotherViewInteractorLogic {
 }
 
 class AnotherViewInteractor: AnotherViewInteractorLogic {
-    var presenter: AnotherViewPresenterLogic?
+    private let presenter: AnotherViewPresenterLogic
     
     init(presenter: AnotherViewPresenterLogic) {
         self.presenter = presenter
     }
     
     func fetchHelloWorld() {
-        presenter?.presenterHelloWorld()
+        presenter.presenterHelloWorld()
     }
 }

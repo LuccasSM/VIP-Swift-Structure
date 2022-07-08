@@ -11,7 +11,7 @@ import UIKit
 protocol RoutingDestinationProtocol {}
 
 enum VcRoutingDestination: RoutingDestinationProtocol {
-   case viewController
+    case viewController
 }
 
 protocol RouterProtocol {
@@ -30,15 +30,11 @@ final class ViewControllerRouter: RouterProtocol {
             print("tela viewController")
         }
     }
-    
-    init(viewController: ViewController) {
-        self.viewController = viewController
-    }
 
     // MARK: ViewControllerRouterInput
 
     func navigateToPushedViewController(source: UIViewController) {
-        let vc = UINavigationController(rootViewController: AnotherViewController())
+        let vc = UINavigationController(rootViewController: ConfiguratorAnother.config())
         vc.modalTransitionStyle = .crossDissolve
         vc.modalPresentationStyle = .fullScreen
         self.viewController?.present(vc, animated: true)

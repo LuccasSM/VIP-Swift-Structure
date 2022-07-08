@@ -11,7 +11,7 @@ import UIKit
 protocol AnotherDestinationProtocol {}
 
 enum AnotherRoutingDestination: AnotherDestinationProtocol {
-   case another
+    case another
 }
 
 protocol RouterProtocolAnother {
@@ -30,10 +30,6 @@ final class AnotherControllerRouter: RouterProtocolAnother {
             print("tela another")
         }
     }
-    
-    init(another: AnotherViewController) {
-        self.another = another
-    }
 
     // MARK: ViewControllerRouterInput
 
@@ -42,5 +38,9 @@ final class AnotherControllerRouter: RouterProtocolAnother {
         vc.modalTransitionStyle = .crossDissolve
         vc.modalPresentationStyle = .fullScreen
         self.another?.present(vc, animated: true)
+    }
+    
+    func dismissView(source: UIViewController) {
+        self.another?.dismiss(animated: true)
     }
 }

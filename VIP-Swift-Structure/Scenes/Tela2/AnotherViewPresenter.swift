@@ -14,10 +14,6 @@ protocol AnotherViewPresenterLogic {
 class AnotherViewPresenter: AnotherViewPresenterLogic {
     weak var vc: AnotherViewControllerLogic?
     
-    init(vc: AnotherViewControllerLogic) {
-        self.vc = vc
-    }
-    
     func presenterHelloWorld() {
         vc?.displayAnotherInfo()
     }

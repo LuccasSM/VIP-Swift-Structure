@@ -14,10 +14,6 @@ protocol PresenterLogic {
 class Presenter: PresenterLogic {
     weak var vc: ViewControllerLogic?
     
-    init(vc: ViewControllerLogic) {
-        self.vc = vc
-    }
-    
     func presenterHelloWorld() {
         vc?.displayHelloWorld()
     }

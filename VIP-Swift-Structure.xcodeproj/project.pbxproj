@@ -9,14 +9,13 @@
 /* Begin PBXBuildFile section */
 		F80E4F572878B17500D0987B /* RoutherAnother.swift in Sources */ = {isa = PBXBuildFile; fileRef = F80E4F562878B17500D0987B /* RoutherAnother.swift */; };
 		F83036C52877192B006BC6A0 /* AnotherViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F83036C42877192B006BC6A0 /* AnotherViewController.swift */; };
-		F83036C728771954006BC6A0 /* RouterController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F83036C628771954006BC6A0 /* RouterController.swift */; };
+		F83036C728771954006BC6A0 /* RouterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F83036C628771954006BC6A0 /* RouterViewController.swift */; };
 		F83036C92877198F006BC6A0 /* Presenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = F83036C82877198F006BC6A0 /* Presenter.swift */; };
 		F83036CB287719A8006BC6A0 /* AnotherViewPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = F83036CA287719A8006BC6A0 /* AnotherViewPresenter.swift */; };
 		F83036CD287719D8006BC6A0 /* AnotherViewInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = F83036CC287719D8006BC6A0 /* AnotherViewInteractor.swift */; };
 		F83036CF287719EC006BC6A0 /* Interactor.swift in Sources */ = {isa = PBXBuildFile; fileRef = F83036CE287719EC006BC6A0 /* Interactor.swift */; };
-		F83036D128771A11006BC6A0 /* Configurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = F83036D028771A11006BC6A0 /* Configurator.swift */; };
-		F887BC732878808300C4D4F5 /* MyViewInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = F887BC722878808300C4D4F5 /* MyViewInteractor.swift */; };
-		F887BC752878809000C4D4F5 /* MyViewPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = F887BC742878809000C4D4F5 /* MyViewPresenter.swift */; };
+		F83036D128771A11006BC6A0 /* ConfiguratorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F83036D028771A11006BC6A0 /* ConfiguratorViewController.swift */; };
+		F88283A42878C66D00F78614 /* ConfiguratorAnother.swift in Sources */ = {isa = PBXBuildFile; fileRef = F88283A32878C66D00F78614 /* ConfiguratorAnother.swift */; };
 		F88D2CFA2874D98800EDB5DC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F88D2CF92874D98800EDB5DC /* AppDelegate.swift */; };
 		F88D2CFC2874D98800EDB5DC /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F88D2CFB2874D98800EDB5DC /* SceneDelegate.swift */; };
 		F88D2CFE2874D98800EDB5DC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F88D2CFD2874D98800EDB5DC /* ViewController.swift */; };
@@ -29,14 +28,13 @@
 /* Begin PBXFileReference section */
 		F80E4F562878B17500D0987B /* RoutherAnother.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoutherAnother.swift; sourceTree = "<group>"; };
 		F83036C42877192B006BC6A0 /* AnotherViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnotherViewController.swift; sourceTree = "<group>"; };
-		F83036C628771954006BC6A0 /* RouterController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RouterController.swift; sourceTree = "<group>"; };
+		F83036C628771954006BC6A0 /* RouterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RouterViewController.swift; sourceTree = "<group>"; };
 		F83036C82877198F006BC6A0 /* Presenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Presenter.swift; sourceTree = "<group>"; };
 		F83036CA287719A8006BC6A0 /* AnotherViewPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnotherViewPresenter.swift; sourceTree = "<group>"; };
 		F83036CC287719D8006BC6A0 /* AnotherViewInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnotherViewInteractor.swift; sourceTree = "<group>"; };
 		F83036CE287719EC006BC6A0 /* Interactor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Interactor.swift; sourceTree = "<group>"; };
-		F83036D028771A11006BC6A0 /* Configurator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Configurator.swift; sourceTree = "<group>"; };
-		F887BC722878808300C4D4F5 /* MyViewInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyViewInteractor.swift; sourceTree = "<group>"; };
-		F887BC742878809000C4D4F5 /* MyViewPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyViewPresenter.swift; sourceTree = "<group>"; };
+		F83036D028771A11006BC6A0 /* ConfiguratorViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfiguratorViewController.swift; sourceTree = "<group>"; };
+		F88283A32878C66D00F78614 /* ConfiguratorAnother.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfiguratorAnother.swift; sourceTree = "<group>"; };
 		F88D2CF62874D98800EDB5DC /* VIP-Swift-Structure.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "VIP-Swift-Structure.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F88D2CF92874D98800EDB5DC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F88D2CFB2874D98800EDB5DC /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -59,53 +57,6 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		F83036BF2877188D006BC6A0 /* View */ = {
-			isa = PBXGroup;
-			children = (
-				F83036C42877192B006BC6A0 /* AnotherViewController.swift */,
-				F88D2CFD2874D98800EDB5DC /* ViewController.swift */,
-				F890C4822877C6F300BDEC05 /* MyView.swift */,
-			);
-			path = View;
-			sourceTree = "<group>";
-		};
-		F83036C0287718A7006BC6A0 /* Router */ = {
-			isa = PBXGroup;
-			children = (
-				F83036C628771954006BC6A0 /* RouterController.swift */,
-				F80E4F562878B17500D0987B /* RoutherAnother.swift */,
-			);
-			path = Router;
-			sourceTree = "<group>";
-		};
-		F83036C1287718B4006BC6A0 /* Presenter */ = {
-			isa = PBXGroup;
-			children = (
-				F83036CA287719A8006BC6A0 /* AnotherViewPresenter.swift */,
-				F83036C82877198F006BC6A0 /* Presenter.swift */,
-				F887BC742878809000C4D4F5 /* MyViewPresenter.swift */,
-			);
-			path = Presenter;
-			sourceTree = "<group>";
-		};
-		F83036C2287718BD006BC6A0 /* Interactor */ = {
-			isa = PBXGroup;
-			children = (
-				F83036CC287719D8006BC6A0 /* AnotherViewInteractor.swift */,
-				F83036CE287719EC006BC6A0 /* Interactor.swift */,
-				F887BC722878808300C4D4F5 /* MyViewInteractor.swift */,
-			);
-			path = Interactor;
-			sourceTree = "<group>";
-		};
-		F83036C3287718CC006BC6A0 /* Common */ = {
-			isa = PBXGroup;
-			children = (
-				F83036D028771A11006BC6A0 /* Configurator.swift */,
-			);
-			path = Common;
-			sourceTree = "<group>";
-		};
 		F83036D228771A49006BC6A0 /* Resource */ = {
 			isa = PBXGroup;
 			children = (
@@ -132,6 +83,48 @@
 			path = "Sb-Xib";
 			sourceTree = "<group>";
 		};
+		F882839F2878C38A00F78614 /* Scenes */ = {
+			isa = PBXGroup;
+			children = (
+				F88283A02878C39700F78614 /* Tela1 */,
+				F88283A12878C5DA00F78614 /* Tela2 */,
+				F88283A22878C60B00F78614 /* Tela3 */,
+			);
+			path = Scenes;
+			sourceTree = "<group>";
+		};
+		F88283A02878C39700F78614 /* Tela1 */ = {
+			isa = PBXGroup;
+			children = (
+				F88D2CFD2874D98800EDB5DC /* ViewController.swift */,
+				F83036C628771954006BC6A0 /* RouterViewController.swift */,
+				F83036CE287719EC006BC6A0 /* Interactor.swift */,
+				F83036C82877198F006BC6A0 /* Presenter.swift */,
+				F83036D028771A11006BC6A0 /* ConfiguratorViewController.swift */,
+			);
+			path = Tela1;
+			sourceTree = "<group>";
+		};
+		F88283A12878C5DA00F78614 /* Tela2 */ = {
+			isa = PBXGroup;
+			children = (
+				F83036C42877192B006BC6A0 /* AnotherViewController.swift */,
+				F80E4F562878B17500D0987B /* RoutherAnother.swift */,
+				F83036CC287719D8006BC6A0 /* AnotherViewInteractor.swift */,
+				F83036CA287719A8006BC6A0 /* AnotherViewPresenter.swift */,
+				F88283A32878C66D00F78614 /* ConfiguratorAnother.swift */,
+			);
+			path = Tela2;
+			sourceTree = "<group>";
+		};
+		F88283A22878C60B00F78614 /* Tela3 */ = {
+			isa = PBXGroup;
+			children = (
+				F890C4822877C6F300BDEC05 /* MyView.swift */,
+			);
+			path = Tela3;
+			sourceTree = "<group>";
+		};
 		F88D2CED2874D98800EDB5DC = {
 			isa = PBXGroup;
 			children = (
@@ -151,11 +144,7 @@
 		F88D2CF82874D98800EDB5DC /* VIP-Swift-Structure */ = {
 			isa = PBXGroup;
 			children = (
-				F83036BF2877188D006BC6A0 /* View */,
-				F83036C0287718A7006BC6A0 /* Router */,
-				F83036C2287718BD006BC6A0 /* Interactor */,
-				F83036C1287718B4006BC6A0 /* Presenter */,
-				F83036C3287718CC006BC6A0 /* Common */,
+				F882839F2878C38A00F78614 /* Scenes */,
 				F83036D228771A49006BC6A0 /* Resource */,
 				F83036D328771A60006BC6A0 /* Utils */,
 				F83036D428771AA6006BC6A0 /* Sb-Xib */,
@@ -237,17 +226,16 @@
 			files = (
 				F83036C92877198F006BC6A0 /* Presenter.swift in Sources */,
 				F80E4F572878B17500D0987B /* RoutherAnother.swift in Sources */,
-				F83036C728771954006BC6A0 /* RouterController.swift in Sources */,
+				F83036C728771954006BC6A0 /* RouterViewController.swift in Sources */,
 				F890C4832877C6F300BDEC05 /* MyView.swift in Sources */,
-				F887BC752878809000C4D4F5 /* MyViewPresenter.swift in Sources */,
 				F88D2CFE2874D98800EDB5DC /* ViewController.swift in Sources */,
 				F83036CF287719EC006BC6A0 /* Interactor.swift in Sources */,
 				F88D2CFA2874D98800EDB5DC /* AppDelegate.swift in Sources */,
 				F83036C52877192B006BC6A0 /* AnotherViewController.swift in Sources */,
+				F88283A42878C66D00F78614 /* ConfiguratorAnother.swift in Sources */,
 				F83036CD287719D8006BC6A0 /* AnotherViewInteractor.swift in Sources */,
 				F83036CB287719A8006BC6A0 /* AnotherViewPresenter.swift in Sources */,
-				F887BC732878808300C4D4F5 /* MyViewInteractor.swift in Sources */,
-				F83036D128771A11006BC6A0 /* Configurator.swift in Sources */,
+				F83036D128771A11006BC6A0 /* ConfiguratorViewController.swift in Sources */,
 				F88D2CFC2874D98800EDB5DC /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -402,7 +390,6 @@
 				INFOPLIST_FILE = "VIP-Swift-Structure/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -430,7 +417,6 @@
 				INFOPLIST_FILE = "VIP-Swift-Structure/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
