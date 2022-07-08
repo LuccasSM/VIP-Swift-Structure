@@ -13,7 +13,7 @@ protocol AnotherViewControllerLogic: AnyObject {
 
 class AnotherViewController: UIViewController, AnotherViewControllerLogic {
     var interactor: AnotherViewInteractorLogic?
-    var router: ViewControllerRouter!
+    var router: AnotherControllerRouter!
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -84,6 +84,6 @@ class AnotherViewController: UIViewController, AnotherViewControllerLogic {
     }
     
     @objc func navigateMyView(sender: UIButton!) {
-        router?.navigateToPushedThreeView(source: self)
+        router?.navigateToPushedMyView(source: self)
     }
 }

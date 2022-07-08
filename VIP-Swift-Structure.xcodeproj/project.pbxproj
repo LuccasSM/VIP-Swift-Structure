@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F80E4F572878B17500D0987B /* RoutherAnother.swift in Sources */ = {isa = PBXBuildFile; fileRef = F80E4F562878B17500D0987B /* RoutherAnother.swift */; };
 		F83036C52877192B006BC6A0 /* AnotherViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F83036C42877192B006BC6A0 /* AnotherViewController.swift */; };
 		F83036C728771954006BC6A0 /* RouterController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F83036C628771954006BC6A0 /* RouterController.swift */; };
 		F83036C92877198F006BC6A0 /* Presenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = F83036C82877198F006BC6A0 /* Presenter.swift */; };
@@ -26,6 +27,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		F80E4F562878B17500D0987B /* RoutherAnother.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoutherAnother.swift; sourceTree = "<group>"; };
 		F83036C42877192B006BC6A0 /* AnotherViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnotherViewController.swift; sourceTree = "<group>"; };
 		F83036C628771954006BC6A0 /* RouterController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RouterController.swift; sourceTree = "<group>"; };
 		F83036C82877198F006BC6A0 /* Presenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Presenter.swift; sourceTree = "<group>"; };
@@ -71,6 +73,7 @@
 			isa = PBXGroup;
 			children = (
 				F83036C628771954006BC6A0 /* RouterController.swift */,
+				F80E4F562878B17500D0987B /* RoutherAnother.swift */,
 			);
 			path = Router;
 			sourceTree = "<group>";
@@ -233,6 +236,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F83036C92877198F006BC6A0 /* Presenter.swift in Sources */,
+				F80E4F572878B17500D0987B /* RoutherAnother.swift in Sources */,
 				F83036C728771954006BC6A0 /* RouterController.swift in Sources */,
 				F890C4832877C6F300BDEC05 /* MyView.swift in Sources */,
 				F887BC752878809000C4D4F5 /* MyViewPresenter.swift in Sources */,
